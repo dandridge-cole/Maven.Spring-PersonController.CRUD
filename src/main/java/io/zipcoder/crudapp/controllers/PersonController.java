@@ -16,18 +16,18 @@ public class PersonController {
         this.personRepository = personRepository;
     }
 
-    @PostMapping("/users")
+    @PostMapping("/people")
     Person createPerson(Person p){ return null; }
 
-    @GetMapping("/users/{id}")
+    @GetMapping("/people/{id}")
     Person getPerson(@PathVariable int id){ return null; }
 
-    @GetMapping("/users")
+    @GetMapping("/people")
     List<Person> getPersonList(){ return null; }
 
-    @PutMapping("/users/{id}")
+    @PutMapping("/people/{id}")
     Person updatePerson(@PathVariable Person p){ return null; }
 
-    @DeleteMapping("/users/{id}")
-    void DeletePerson(@PathVariable int id) {}
+    @DeleteMapping("/people/{id}")
+    void deletePerson(@PathVariable int id) {}
 }
